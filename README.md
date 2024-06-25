@@ -5,4 +5,4 @@ Meu primeiro repositório no GitHub
 
 - Nessa versão estou usando HTML, CSS e JavaScript.
 
-- Teste
+- Acesse o site em desenvolvimento: http://thais.bymartins.eti.br/
