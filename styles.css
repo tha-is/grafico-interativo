@@ -3,13 +3,23 @@ body{
   height: 100vh;
   margin: 0;
   background-color: #1b1b32;
-color: #f5f6f7;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 15px;
 }
-h1{
+h1, p{
   color: pink;
+  text-align: center;
+  margin: 1em auto;
 }
 
 label{
   display: block;
   margin: 0.5rem 0;
+}
+form{
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+
 }
