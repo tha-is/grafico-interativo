@@ -10,11 +10,11 @@
 <h1>Hello World!</h1>
 <p>Ao votar o gráfico terá uma interação ao vivo</p>
 
- <form> <!-- em form, é necessário direcionar o link do servidor para receber os dados do formulário. action="" e method="get" ou "post"
+ <form action="" method="POST"> <!-- em form, é necessário direcionar o link do servidor para receber os dados do formulário. action="" e method="get" ou "post"
 --><fieldset>
-  <label for="fruta">Qual fruta você mais gosta?</label>
-  <input type="radio" id="fruta" required> Morango
-  <input type="radio" id="fruta" required> Banana
+  <legend>Qual fruta você mais gosta?</legend>
+  <label for="morango"><input id="morango" type="radio" name="fruta"> Morango </label><!-- name com mesmo nome necessário para entender que se trata de outra opção para o mesmo formulário-->
+  <label for="banana"><input id="banana" type="radio" name="fruta"> Banana </label>
   <input type="submit" value="votar!">
 
 </fieldset>
