@@ -3,21 +3,26 @@
 
     <head>
 <meta charset="UTF-8">
-      <title>Pesquisa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>grafico-interativo</title>
       <link rel="stylesheet" href="styles.css"/>
     </head>
       <body>
-<h1>Hello World!</h1>
-<p>Ao votar o gráfico terá uma interação ao vivo</p>
+  <h1>grafico-interativo</h1>
 
- <form action="" method="POST"> <!-- em form, é necessário direcionar o link do servidor para receber os dados do formulário. action="" e method="get" ou "post"
---><fieldset>
-  <legend>Qual fruta você mais gosta?</legend>
-  <label for="morango"><input id="morango" type="radio" name="fruta"> Morango </label><!-- name com mesmo nome necessário para entender que se trata de outra opção para o mesmo formulário-->
-  <label for="banana"><input id="banana" type="radio" name="fruta"> Banana </label>
-  <input type="submit" value="votar!">
-
-</fieldset>
-</form>
+<div class="main">
+<div id="graficosArea">
+    <div class="grafico" id="grafico-morango"></div>
+    <div class="grafico" id="grafico-banana"></div>
+</div>
+<div class="buttonArea">
+<button id="morango" title="morango">🍓</button>
+<button id="banana" title="banana">🍌</button>
+</div>
+<footer>**Clique em uma das frutas para movimentar o gráfico**</footer>
+  
+</div>
+<script src="index.js"></script>
     </body>
+
   </html>

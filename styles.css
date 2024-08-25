@@ -1,25 +1,81 @@
+*{
+  scroll-behavior: smooth;
+  text-transform: lowercase;
+  box-sizing: border-box;
+}
+
 body{
-  width: 100%;
-  height: 100vh;
   margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 15px;
+  padding: 0;
+  background: #D90005;
+  background: linear-gradient(to right, #D90000 0%, #FABF70 50%, #FFF338 100%);
+
 }
-h1, p{
-  color: pink;
+
+h1{
+text-align: center;
+margin: auto;
+opacity: 0.6;
+font-size: 13px;
+letter-spacing: 6px;
+font-weight: 700;
+padding: 5px 0;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 4px;
+  width: 50vw;
+  }
+
+#graficosArea {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  border: 5px solid white;
+
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.grafico{
+height: 90%;
+display: flex;
+margin-top: auto;
+width: 20%;
+border-radius: 10px 10px 0px 0px;
+}
+
+#grafico-morango{
+background-color: red;
+}
+#grafico-banana{
+  background-color: yellow;
+}
+
+.buttonArea {
+display: flex;
+flex-direction: row;
+margin: 10px auto;
+width: 300px;
+justify-content: space-around;
+
+}
+
+button{
+  border: none;
+  padding: 5px;
+  background-color: rgb(177, 177, 177);
+  border-radius: 10px ;
+}
+
+footer{
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-size: 10px;
   text-align: center;
-  margin: 1em auto;
-}
-
-label{
-  display: block;
-  margin: 0.5rem 0;
-}
-form{
-  margin: 0 auto;
-  max-width: 500px;
-  min-width: 300px;
-
 }
