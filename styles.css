@@ -48,6 +48,12 @@ margin-top: auto;
 width: 20%;
 border-radius: 10px 10px 0px 0px;
 transition: 0.5s;
+color: black;
+align-items: center;
+align-content: center;
+font-size: 14px;
+font-weight: bold;
+justify-content: center;
 }
 .red {
   background-color: red;
