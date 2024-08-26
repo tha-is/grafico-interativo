@@ -12,17 +12,44 @@
 
 <div class="main">
 <div id="graficosArea">
-    <div class="grafico" id="grafico-morango"></div>
-    <div class="grafico" id="grafico-banana"></div>
+    <div id="grafico1" class="red"></div>
+    <div id="grafico2" class="yellow"></div>
 </div>
 <div class="buttonArea">
-<button id="morango" title="morango">🍓</button>
-<button id="banana" title="banana">🍌</button>
+<button id="banana" title="morango" onclick="myFunctionMorango()">🍓</button>
+<button id="morango" title="banana" onclick="myFunctionBanana()">🍌</button>
 </div>
-<footer>**Clique em uma das frutas para movimentar o gráfico**</footer>
+<footer id="resultado">**Clique em uma das frutas para movimentar o gráfico**</footer>
   
 </div>
-<script src="index.js"></script>
+
+<script>
+   let hg = 20;
+   let ht = 20;
+function myFunctionMorango() {
+  hg += 5;
+  document.getElementById("grafico1");
+  if (hg <= 99){
+    
+  grafico1.style.height = hg+"%";
+  } else {
+    hg = 100;
+  }
+    document.getElementById("resultado").innerText = "Você escolheu morango";
+}
+
+function myFunctionBanana() {
+  ht += 5;
+  document.getElementById("grafico2");
+  if (ht <= 99){
+    
+  grafico2.style.height = ht+"%";
+  } else {
+    ht = 100;
+  }
+    document.getElementById("resultado").innerText = "Você escolheu banana";
+}
+</script>
     </body>
 
   </html>

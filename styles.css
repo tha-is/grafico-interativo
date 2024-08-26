@@ -41,18 +41,25 @@ padding: 5px 0;
   border-radius: 10px;
 }
 
-.grafico{
-height: 90%;
+#grafico1, #grafico2{
+height: 10%;
 display: flex;
 margin-top: auto;
 width: 20%;
 border-radius: 10px 10px 0px 0px;
+transition: 0.5s;
+}
+.red {
+  background-color: red;
 }
 
-#grafico-morango{
+.yellow{
+   background-color: yellow;
+}
+#morango{
 background-color: red;
 }
-#grafico-banana{
+#banana{
   background-color: yellow;
 }
 
