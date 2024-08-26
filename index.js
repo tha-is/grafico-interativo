@@ -26,5 +26,4 @@ function myFunctionBanana() {
     if (ht = 90) {
         document.getElementById("resultado").innerText =  "Banana atingiu o volume máximo do gráfico";
         ht = 10;
-    }
-    }
+    }}
